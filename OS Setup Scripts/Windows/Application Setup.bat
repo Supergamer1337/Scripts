@@ -7,7 +7,6 @@ echo Installing essential packages.
 winget install Brave
 winget install Notepad++
 winget install VLC
-winget install Python
 winget install 7-Zip
 
 :: Get "Frequently used" software
@@ -39,6 +38,7 @@ If /I "%INPUT%"=="n" goto no
 winget install Git
 winget install -q "Microsoft Visual Studio Code"
 winget install "Node.js LTS"
+winget install Python
 
 
 :no
