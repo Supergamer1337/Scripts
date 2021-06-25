@@ -22,8 +22,22 @@ If /I "%INPUT%"=="n" goto no
 winget install Discord
 winget install QBittorrent
 winget install Spotify
-:: TODO: Get SpotMeDown setup here
-winget install Steam
+
+:: Install block the spot (Spotify adblock)
+echo Install spotify adblock? (Y/N)
+set INPUT=
+set /P INPUT=%=%
+If /I "%INPUT%"=="y" goto adblock
+If /I "%INPUT%"=="n" goto noadblock
+:adblock
+curl https://raw.githubusercontent.com/mrpond/BlockTheSpot/master/BlockTheSpot.bat -o BlockTheSpot.bat
+echo Running block the spot script...
+start /wait BlockTheSpot.bat
+echo Deleting downloaded script...
+del BlockTheSpot.bat
+:noadblock
+
+:: Continue to install additional programs
 winget install PowerToys
 winget install Seafile
 
