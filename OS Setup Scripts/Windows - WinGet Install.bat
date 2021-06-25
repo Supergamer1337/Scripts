@@ -42,5 +42,6 @@ winget install "Node.js LTS"
 
 
 :no
+cls
 echo All programs have been installed!
 pause
