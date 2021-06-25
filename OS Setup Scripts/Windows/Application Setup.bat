@@ -22,7 +22,7 @@ If /I "%INPUT%"=="n" goto no
 winget install Discord
 winget install QBittorrent
 winget install Spotify
-:: Get SpotMeDown setup here
+:: TODO: Get SpotMeDown setup here
 winget install Steam
 winget install PowerToys
 winget install Seafile
