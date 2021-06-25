@@ -12,7 +12,7 @@ winget install 7-Zip
 
 :: Get "Frequently used" software
 cls
-echo Install frequently used programs (communication, gaming, entertainment, etc...)? (Y/N)
+echo Install frequently used programs? (Y/N)
 set INPUT=
 set /P INPUT=%=%
 If /I "%INPUT%"=="y" goto yes
@@ -24,5 +24,23 @@ winget install QBittorrent
 winget install Spotify
 :: Get SpotMeDown setup here
 winget install Steam
+winget install PowerToys
+winget install Seafile
 
 :no
+cls
+echo Install development programs? (Y/N)
+set INPUT=
+set /P INPUT=%=%
+If /I "%INPUT%"=="y" goto yes
+If /I "%INPUT%"=="n" goto no
+
+:yes
+winget install Git
+winget install -q "Microsoft Visual Studio Code"
+winget install "Node.js LTS"
+
+
+:no
+echo All programs have been installed!
+pause
