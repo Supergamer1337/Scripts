@@ -2,13 +2,11 @@ Clear-Host
 $host.ui.RawUI.WindowTitle = “Application Installer”
 Write-Host "Installing essential packages."
 
-# Get all essential software.
 winget install --id=Brave.Brave  -e
 winget install --id=Notepad++.Notepad++  -e
 winget install --id=VideoLAN.VLC  -e
 winget install --id=7zip.7zip  -e
 
-# Get "Frequently used" software
 Clear-Host
 $inp = Read-Host "Install frequently used programs? (Y/N)"
 
@@ -49,6 +47,7 @@ if ($inp -like "y*") {
   winget install --id=Valve.Steam  -e
   winget install --id=GOG.Galaxy -e
   winget install --id=EpicGames.EpicGamesLauncher  -e
+  winget install --id=mtkennerly.ludusavi  -e
 }
 
 Clear-Host
