@@ -28,6 +28,7 @@ if ($inp -like "y*") {
   # Continue to install additional programs
   winget install --id=Microsoft.PowerToys  -e
   winget install --id=Seafile.Seafile  -e
+  winget install --id=plex.Plex  -e
 }
 
 Clear-Host
