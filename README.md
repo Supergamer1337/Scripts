@@ -1,4 +1,2 @@
-# Scripts-and-Dotfiles
-Scripts for setting up operating systems, manage application dotfiles etc. For myself.
-
-Will be contiously expanded as I find new scripts and dotfiles to add.
+# Scripts
+Scripts for setting up operating systems, dockers, applications etc. for myself. Will be consistently updated as I find the need.
